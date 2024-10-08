@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tic Tac Toe Game</string>
+    <string name="player">Player</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_game">New Game</string>
+    <string name="confirm">Confirm</string>
+    <string name="player_x_name">Player X Name…</string>
+    <string name="player_o_name">Player O Name…</string>
+    <string name="start">Start</string>
+    <string name="back">Back</string>
+    <string name="str_continue">Continue</string>
+    <string name="wins">Wins!</string>
+    <string name="play_again">Play Again</string>
+    <string name="restart">Restart</string>
+</resources>

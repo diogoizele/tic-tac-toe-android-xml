@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:padding="24dp"
+    tools:context=".ConfirmFragment">
+
+    <LinearLayout
+        android:id="@+id/llPlayerXIdentification"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:background="@drawable/clickable_item_button"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toStartOf="@+id/llPlayerOIdentification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="@string/player"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/player_x" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPlayerOIdentification"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:background="@drawable/clickable_item_button"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/llPlayerXIdentification"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/baloo_thambi"
+            android:text="@string/player"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/player_o" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPlayerNameX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_thambi"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="@+id/llPlayerXIdentification"
+        app:layout_constraintStart_toStartOf="@+id/llPlayerXIdentification"
+        app:layout_constraintTop_toBottomOf="@+id/llPlayerXIdentification"
+        tools:text="James Page"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/tvPlayerNameO"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo_thambi"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="@+id/llPlayerOIdentification"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintStart_toStartOf="@+id/llPlayerOIdentification"
+        app:layout_constraintTop_toBottomOf="@+id/llPlayerOIdentification"
+        tools:text="Dilly Jonny"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/clickable_item_button"
+        android:fontFamily="@font/baloo_thambi"
+        android:text="@string/start"
+        android:textColor="@color/purple"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/clickable_item_button"
+        android:fontFamily="@font/baloo_thambi"
+        android:text="@string/back"
+        android:textColor="@color/purple"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
